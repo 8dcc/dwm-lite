@@ -14,3 +14,4 @@ sudo pacman -S dina-font
 ### Screenshots
 ![Screenshot without ras](images/dwm-lite1.png)
 ![Screenshot with ras](images/dwm-lite2.png)
+![dwm-lite-mix](images/dwm-lite-mix.png)
