@@ -6,6 +6,11 @@ This is meant to be used as a replacement for [arch-files](https://github.com/r4
 ### Necessary packages
 Necessary packages not covered in the main repo.
 
+**dwm 32bits**
+```bash
+sudo pacman -S xf86-video-intel
+```
+
 **Fonts:**
 ```bash
 sudo pacman -S dina-font
