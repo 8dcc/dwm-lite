@@ -22,7 +22,13 @@ While installing it on a Fujitsu T4215 with touchscreen, I needed to install the
 sudo pacman -S xf86-input-wacom  # xf86-video-intel
 sudo usermod -aG wheel,audio,video,optical,storage,tty,uucp USERNAME
 ```
-
+For custom keys like XF86NNNNNNNNN, install `xbindkeys`, run `xbindkeys -d > ~/.xbindkeysrc` and copy `xbindkeysrc` to `~/.xbindkeysrc`.
+```bash
+sudo pacman -S xbindkeys
+xbindkeys -d > ~/.xbindkeysrc
+cp ~/000/GITHUB/arch-files/dotfiles/xbindkeysrc/xbindkeysrc ~/.xbindkeysrc
+```
+	
 ### Todo
 - Add [tag-previews](https://dwm.suckless.org/patches/tag-previews/) to dwm.
 
