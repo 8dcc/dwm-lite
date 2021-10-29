@@ -16,6 +16,14 @@ sudo pacman -S xf86-video-intel
 sudo pacman -S dina-font
 ```
 
+**Misc.**
+While installing it on a Fujitsu T4215 with touchscreen, I needed to install the wacom drivers and add the user to the `tty` and `uucp` group.
+```
+sudo pacman -S xf86-input-wacom  # xf86-video-intel
+sudo usermod -aG wheel,audio,video,optical,storage,tty,uucp USERNAME
+# https://wiki.archlinux.org/title/Users_and_groups#User_groups
+```
+
 ### Todo
 - Add [tag-previews](https://dwm.suckless.org/patches/tag-previews/) to dwm.
 
